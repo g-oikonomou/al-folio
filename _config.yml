@@ -104,7 +104,7 @@ scholar:
 
   source: /assets/bib/
   bibliography: geo.bib
-  bibliography_template: bib
+  bibliography_template: geo_bib
 
   replace_strings: true
   join_strings: true
