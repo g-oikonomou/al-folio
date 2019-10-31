@@ -1,8 +1,8 @@
 ---
 layout: about
 permalink: /
-title: <strong>George</strong> Oikonomou
-description: <a href="">Affiliations</a>. Address. Contacts. Moto. Etc.
+title:
+description:
 
 profile:
   align: right
