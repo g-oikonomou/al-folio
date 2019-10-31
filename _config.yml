@@ -66,9 +66,12 @@ collections:
   projects:
     output: false
     permalink: /projects/:path/
+  publications:
+    output: true
+    permalink: /pubs/:path/
 
 news_limit: 5
-
+pubs_url: /pubs/type
 # -----------------------------------------------------------------------------
 # Jekyll settings
 # -----------------------------------------------------------------------------
