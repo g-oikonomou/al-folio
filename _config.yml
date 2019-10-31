@@ -100,7 +100,7 @@ scholar:
   order: descending
 
   source: /_bibliography/
-  bibliography: papers.bib
+  bibliography: geo.bib
   bibliography_template: bib
 
   replace_strings: true
