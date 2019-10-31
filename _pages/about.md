@@ -1,23 +1,58 @@
 ---
 layout: about
 permalink: /
-title: <strong>Your</strong> Name
+title: <strong>George</strong> Oikonomou
 description: <a href="">Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: photo-t.jpg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Office 5.09</p>
+    <p>Merchant Venturers Building</p>
+    <p>Woodland Road</p>
+    <p>Clifton</p>
+    <p>BS8 1UB</p>
+    <p>UK</p>
 
 news: true
 social: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+# Academic
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Senior Lecturer with Electrical and Electronic Engineering
+at the [University of Bristol](http://www.bris.ac.uk).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Previously,
+
+* Research Associate with the University of Bristol, working on
+  [RERUM](https://ict-rerum.eu) and [SPHERE](http://irc-sphere.ac.uk).
+* Research Associate with Computer Science at
+    [Loughborough University](http://www.lboro.ac.uk).
+* Member (Research Assistant and Sys Admin) of the Computer and Communication
+  Systems Laboratory (Department of Informatics, Athens University of Economics
+  and Business).
+
+# Developer
+
+Co-founder, steering group member and maintainer of the
+[Contiki-NG](http://www.contiki-ng.org) open source operating system for the
+Internet of Things.
+
+I am the developer of its IPv6 multicast support
+([some info here](http://blog.spd.gr/2012/04/multicast-support-for-6lowpans-with.html))
+and I maintain a number of hardware ports, including the one for TI's
+CC26x0/CC13x0 as well as the platforms powered by the older CC2538 System-on-Chip
+(CC2538DK, Zolertia Zoul and OpenMote). Additionally:
+
+* Developer of [Sensniff](https://github.com/g-oikonomou/sensniff), the
+  open source "Live Traffic Capture and Sniffer for IEEE 802.15.4 networks".
+* Collaborator/maintainer of [cc2538-bsl](https://github.com/JelmerT/cc2538-bsl),
+  an open source serial boot loader project.
+* Developer of Contiki's support for 8051-based devices, such as as the TI
+  CC2530/31 and the Sensinode CC2430-based sensors. These ports are no longer
+  maintained, but for historic purposes
+  [here is some info](github.com/contiki-os/contiki/wiki/8051-Based-Platforms)
+  and a related
+  [blog entry](href="http://blog.spd.gr/2011/12/contiki-for-cc2530-with-uipv6rpl.html).
