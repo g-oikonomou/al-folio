@@ -37,7 +37,7 @@ blog_description: a simple whitespace theme for academics
 blog_display: false
 
 # Pagination
-paginate: 4
+#paginate: 4
 permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
