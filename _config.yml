@@ -102,7 +102,7 @@ scholar:
   sort_by: year
   order: descending
 
-  source: /_bibliography/
+  source: /assets/bib/
   bibliography: geo.bib
   bibliography_template: bib
 
