@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Publications by year
+title: Publications by date
 description:
 sorting: year
 link_to: type
