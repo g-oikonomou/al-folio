@@ -25,6 +25,7 @@ medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
 research_gate_profile: # your profile on ResearchGate
+blogger_url: # your blogger URL
 
 contact_note: >
   The best way to contact me is by email.
