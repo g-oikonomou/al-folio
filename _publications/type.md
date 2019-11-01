@@ -4,6 +4,7 @@ title: Publications by type
 description:
 sorting: type
 link_to: year
+social: true
 ---
 
 {% include bib_intro.html %}
