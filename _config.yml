@@ -12,7 +12,15 @@ footer_text: >
 url: https://spd.gr # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: # leave blank if you don't want to display last updated
-og_image: https://repository-images.githubusercontent.com/218404858/82da6200-fc3f-11e9-9318-58641925a1f4
+
+# -----------------------------------------------------------------------------
+# Open Graph
+# -----------------------------------------------------------------------------
+# Allow links to the page to be displayed with a preview object on social media
+# To achieve this, change serve_og_meta to true and then provide a URL for
+# og_image.
+serve_og_meta: false # Include Open Graph meta tags in the HTML head
+og_image: # The Open Graph preview image
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
