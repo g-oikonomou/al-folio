@@ -5,9 +5,10 @@ name: George Oikonomou
 email: g.oikonomou@bristol.ac.uk
 description: George Oikonomou's home page.
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with
+  Built with <a href="http://jekyllrb.com/">Jekyll</a> and the
   <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Uses <a href="https://jpswalsh.github.io/academicons/">Academicons</a> and
+  <a href="http://fontawesome.io/">Font Awesome</a>.
 
 url: https://spd.gr # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
