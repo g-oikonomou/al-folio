@@ -98,6 +98,14 @@ Just use the liquid tags `{% highlight python %}` and `{% endhighlight %}` to de
   </a>
 </p>
 
+#### Bootstrap support
+The al-folio theme can be used in combination with [bootstrap](https://getbootstrap.com/).
+This feature is experimental. To enable it, change `enable_bootstrap` to `true`
+in your `_config.yml`.
+
+It is possible that enabling this feature will cause your site to look slightly
+different. If this happens, please open an issue with details.
+
 ## Contributing
 
 Feel free to contribute new features and theme improvements by sending a pull request.

@@ -34,6 +34,14 @@
             margin-left: 10px;
         }
     }
+
+    // Bootstrap override. Hide this label when not $on-palm because otherwise
+    // bootstrap will set display: inline-block and this will ruin the layout
+    // of the nav
+    label[for="nav-trigger"] {
+        display: none;
+    }
+
     // added for hamburger
     @include media-query($on-palm) {
         position: absolute;
@@ -51,6 +59,8 @@
             height: 36px;
             z-index: 2;
             cursor: pointer;
+            //bootstrap override
+            margin-bottom: 0px;
         }
 
         .menu-icon {
