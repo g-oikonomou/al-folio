@@ -40,6 +40,8 @@ I maintain and contribute to a number of open source projects.
    data-show-count="true"
    aria-label="Follow @g-oikonomou on GitHub">Follow @g-oikonomou</a>
 
+---
+
 #### Contki-NG
 Co-founder, steering group member and maintainer of the
 [Contiki-NG](http://www.contiki-ng.org) open source operating system for the
@@ -55,6 +57,8 @@ CC26x0/CC13x0 as well as the platforms powered by the older CC2538 System-on-Chi
    data-icon="octicon-star" data-show-count="true"
    aria-label="Star contiki-ng/contiki-ng on GitHub">contiki-ng/contiki-ng</a>
 
+---
+
 #### Sensniff
 Developer of [Sensniff](https://github.com/g-oikonomou/sensniff), the
 open source "Live Traffic Capture and Sniffer for IEEE 802.15.4 networks".
@@ -63,6 +67,8 @@ open source "Live Traffic Capture and Sniffer for IEEE 802.15.4 networks".
    data-icon="octicon-star" data-show-count="true"
    aria-label="Star g-oikonomou/sensniff on GitHub">g-oikonomou/sensniff</a>
 
+---
+
 #### cc2538-bsl
 Collaborator/maintainer of [cc2538-bsl](https://github.com/JelmerT/cc2538-bsl),
 an open source serial boot loader project.
@@ -70,6 +76,8 @@ an open source serial boot loader project.
 <a class="github-button" href="https://github.com/JelmerT/cc2538-bsl"
    data-icon="octicon-star" data-show-count="true"
    aria-label="Star JelmerT/cc2538-bsl on GitHub">JelmerT/cc2538-bsl</a>
+
+---
 
 #### Legacy contiki for 8051-based devices
 Developer of Contiki's support for 8051-based devices, such as as the TI
