@@ -1,8 +1,10 @@
 ---
 layout: about
 permalink: /
-title:
-description:
+title: George Oikonomou
+description: >
+  Senior Lecturer | Electrical and Electronic Engineering
+  | <a href="http://www.bris.ac.uk">University of Bristol</a>
 
 profile:
   align: right
