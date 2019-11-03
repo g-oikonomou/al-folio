@@ -3,7 +3,7 @@ layout: about
 permalink: /
 title: George Oikonomou
 description: >
-  Senior Lecturer | Electrical and Electronic Engineering
+  Senior Lecturer in IoT Networking | Electrical and Electronic Engineering
   | <a href="http://www.bris.ac.uk">University of Bristol</a>
 
 profile:
@@ -21,12 +21,9 @@ news: true
 social: true
 ---
 
-# Academic
 
-Senior Lecturer with Electrical and Electronic Engineering
-at the [University of Bristol](http://www.bris.ac.uk).
 
-Previously,
+### Previously
 
 * Research Associate with the University of Bristol, working on
   [RERUM](https://ict-rerum.eu) and [SPHERE](http://irc-sphere.ac.uk).
@@ -36,8 +33,14 @@ Previously,
   Systems Laboratory (Department of Informatics, Athens University of Economics
   and Business).
 
-# Developer
+### Open source
+I maintain and contribute to a number of open source projects.
 
+<a class="github-button" href="https://github.com/g-oikonomou"
+   data-show-count="true"
+   aria-label="Follow @g-oikonomou on GitHub">Follow @g-oikonomou</a>
+
+#### Contki-NG
 Co-founder, steering group member and maintainer of the
 [Contiki-NG](http://www.contiki-ng.org) open source operating system for the
 Internet of Things.
@@ -46,15 +49,32 @@ I am the developer of its IPv6 multicast support
 ([some info here](http://blog.spd.gr/2012/04/multicast-support-for-6lowpans-with.html))
 and I maintain a number of hardware ports, including the one for TI's
 CC26x0/CC13x0 as well as the platforms powered by the older CC2538 System-on-Chip
-(CC2538DK, Zolertia Zoul and OpenMote). Additionally:
+(CC2538DK, Zolertia Zoul and OpenMote).
 
-* Developer of [Sensniff](https://github.com/g-oikonomou/sensniff), the
-  open source "Live Traffic Capture and Sniffer for IEEE 802.15.4 networks".
-* Collaborator/maintainer of [cc2538-bsl](https://github.com/JelmerT/cc2538-bsl),
-  an open source serial boot loader project.
-* Developer of Contiki's support for 8051-based devices, such as as the TI
-  CC2530/31 and the Sensinode CC2430-based sensors. These ports are no longer
-  maintained, but for historic purposes
-  [here is some info](github.com/contiki-os/contiki/wiki/8051-Based-Platforms)
-  and a related
-  [blog entry](href="http://blog.spd.gr/2011/12/contiki-for-cc2530-with-uipv6rpl.html).
+<a class="github-button" href="https://github.com/contiki-ng/contiki-ng"
+   data-icon="octicon-star" data-show-count="true"
+   aria-label="Star contiki-ng/contiki-ng on GitHub">contiki-ng/contiki-ng</a>
+
+#### Sensniff
+Developer of [Sensniff](https://github.com/g-oikonomou/sensniff), the
+open source "Live Traffic Capture and Sniffer for IEEE 802.15.4 networks".
+
+<a class="github-button" href="https://github.com/g-oikonomou/sensniff"
+   data-icon="octicon-star" data-show-count="true"
+   aria-label="Star g-oikonomou/sensniff on GitHub">g-oikonomou/sensniff</a>
+
+#### cc2538-bsl
+Collaborator/maintainer of [cc2538-bsl](https://github.com/JelmerT/cc2538-bsl),
+an open source serial boot loader project.
+
+<a class="github-button" href="https://github.com/JelmerT/cc2538-bsl"
+   data-icon="octicon-star" data-show-count="true"
+   aria-label="Star JelmerT/cc2538-bsl on GitHub">JelmerT/cc2538-bsl</a>
+
+#### Legacy contiki for 8051-based devices
+Developer of Contiki's support for 8051-based devices, such as as the TI
+CC2530/31 and the Sensinode CC2430-based sensors. These ports are no longer
+maintained, but for historic purposes
+[here is some info](github.com/contiki-os/contiki/wiki/8051-Based-Platforms)
+and a related
+[blog entry](href="http://blog.spd.gr/2011/12/contiki-for-cc2530-with-uipv6rpl.html).
