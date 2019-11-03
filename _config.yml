@@ -7,8 +7,10 @@ description: George Oikonomou's home page.
 footer_text: >
   Built with <a href="http://jekyllrb.com/">Jekyll</a> and the
   <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Uses <a href="https://jpswalsh.github.io/academicons/">Academicons</a> and
-  <a href="http://fontawesome.io/">Font Awesome</a>.
+  Uses <a href="https://jpswalsh.github.io/academicons/">Academicons</a>,
+  <a href="http://fontawesome.com/">Font Awesome</a>,
+  <a href="http://getbootstrap.com">Bootstrap</a>,
+  <a href="http://glyphicons.com/">Glyphicons</a>.
 
 url: https://spd.gr # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
