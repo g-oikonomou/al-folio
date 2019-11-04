@@ -29,3 +29,22 @@ footer {
         }
     }
 }
+
+ol.bibliography {
+    font-size: small;
+    list-style-type: none;
+}
+
+ol.bibliography > li:before{
+    content: "[" counter(bibitem) "]";
+    position: absolute;
+    left: -3em;
+}
+
+ol.bibliography > li {
+    counter-increment: bibitem -1;
+}
+
+ol.bibliography > li > span.spd-bib-row {
+    display: inline;
+}
