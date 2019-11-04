@@ -1,102 +1,43 @@
 ---
 ---
-
-{% if entry.abbr %}
-  {% if site.data.venues[entry.abbr] %}
-    <abbr>[<a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a>]</abbr>
-  {% else %}
-    <abbr>[{{entry.abbr}}]</abbr>
-  {% endif %}
-{% endif %}
-
-<div id="{{entry.key}}">
-    {% for author in entry.author_array %}
-      {% if forloop.length == 1 %}
-        {% if author.last == site.scholar.last_name %}
-          <em>{{author.first | slice: 0}}. {{author.last}}</em>
-        {% else %}
-          {{author.first | slice: 0}}. {{author.last}}
-        {% endif %}
-      {% else %}
-        {% unless forloop.last %}
-          {% if author.last == site.scholar.last_name %}
-            <em>{{author.first | slice: 0}}. {{author.last}}</em>,
-          {% else %}
-            {% if site.data.coauthors[author.last] %}
-              <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first | slice: 0}}. {{author.last}}</a>,
-            {% else %}
-              {{author.first | slice: 0}}. {{author.last}},
-            {% endif %}
-          {% endif %}
-        {% else %}
-          {% if author.last == site.scholar.last_name %}
-            and <em>{{author.first | slice: 0}}. {{author.last}}</em>
-          {% else %}
-            {% if site.data.coauthors[author.last] %}
-              and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first | slice: 0}}. {{author.last}}</a>
-            {% else %}
-              and {{author.first | slice: 0}}. {{author.last}}
-            {% endif %}
-          {% endif %}
-        {% endunless %}
-      {% endif %}
-    {% endfor %}
-  "{{entry.title}}"
+<span id="{{entry.key}}" class="spd-bib-row">
+  {%- for author in entry.author_array -%}
+    {%- unless forloop.first -%}
+    ,
+    {% endunless %}
+    {%- if author.last == site.scholar.last_name -%}
+      <em>{{author.first | slice: 0}}. {{author.last}}</em>
+    {%- else -%}
+      {%- if site.data.coauthors[author.last] -%}
+        <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first | slice: 0}}. {{author.last}}</a>
+      {%- else -%}
+        {{author.first | slice: 0}}. {{author.last}}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+  , "{{entry.title}}"
   {%- if entry.type == "article" -%}
-    <em>{{entry.journal}}</em>
+    , <em>{{entry.journal}}</em>
   {%- elsif entry.type == "inproceedings" -%}
-    <em>In {{entry.booktitle}}</em>
+    , <em>In {{entry.booktitle}}</em>
   {%- endif -%}
   {%- if entry.volume -%}
-    ,{{- entry.volume -}}
+    , {{ entry.volume }}
     {%- if entry.number -%}
-      ({{- entry.number -}})
+      ({{ entry.number }})
     {%- endif -%}
   {%- endif -%}
-  {%- if entry.year -%}
-    , {{- entry.year -}}
+  {%- if entry.pages -%}
+    , pp. {{ entry.pages }}
   {%- endif -%}
-      {{ entry.index }}
-
-  {%- if entry.note -%}
+  {%- if entry.type == "article" and entry.publisher -%}
+    , {{ entry.publisher }}
+  {%- endif -%}
+  {%- if entry.year -%}
+    , {{ entry.year }}
+  {%- endif -%}
+  {% if entry.note %}
     ({{ entry.note -}})
   {%- endif -%}
 
-  <span class="links">
-  {% if entry.abstract %}
-    [<a class="abstract">Abs</a>]
-  {% endif %}
-  {% if entry.arxiv %}
-    [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
-  {% endif %}
-  {% if entry.html %}
-    [<a href="{{ entry.html }}" target="_blank">HTML</a>]
-  {% endif %}
-  {% if entry.pdf %}
-    [<a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
-  {% endif %}
-  {% if entry.supp %}
-    [<a href="{{ entry.supp | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supp</a>]
-  {% endif %}
-  {% if entry.poster %}
-    [<a href="{{ entry.poster | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>]
-  {% endif %}
-  {% if entry.slides %}
-    [<a href="{{ entry.slides | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>]
-  {% endif %}
-  {% if entry.code %}
-    [<a href="{{ entry.code }}" target="_blank">Code</a>]
-  {% endif %}
-  </span>
-
-  <!-- Hidden abstract block -->
-  {% if entry.abstract %}
-  <span class="abstract hidden">
-    <p>{{ entry.abstract }}</p>
-  </span>
-  {% endif %}
-
-  <div class="details btn-group btn-group-s" style="display: inline-block;">
-<a href="https://research-information.bristol.ac.uk/en/publications/an-sdn-agentenabled-rate-adaptation-framework-for-wlan(8744fc84-b6b4-4a72-b968-9ac13c267217).html" title="Open-Access Version" class="ai ai-open-access btn btn-default" role="button"></a><a href="http://dx.doi.org/10.1109/ICC.2019.8761424" title="DOI" class="ai ai-doi btn btn-default" role="button"></a><a href="http://scholar.google.com/scholar?cites=7175808884894693046" title="Cited by" class="ai ai-google-scholar btn btn-default"></a><a class="fa fa-book show-hide-bibentry btn btn-default" role="button" title="Bib Entry (Show/Hide)"></a><a title="Abstract (Show/Hide)" class="fa fa-font show-hide-abstract btn btn-default" role="button"></a>
-                </div>
-</div>
+</span>
