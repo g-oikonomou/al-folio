@@ -9,14 +9,26 @@ social: true
 
 {% include bib_intro.html %}
 
-<h3 class="type">Journal articles</h3>
+{% capture category_counter %}
+{% bibliography_count -f {{site.scholar.bibliography}} -q @article %}
+{% endcapture %}
+<h3 class="type" style="counter-reset:bibitem {{ category_counter | plus:1 }}">Journal articles</h3>
 {% bibliography -f {{site.scholar.bibliography}} -q @article %}
 
-<h3 class="type">Peer-review conference and workshop papers</h3>
+{% capture category_counter %}
+{% bibliography_count -f {{site.scholar.bibliography}} -q @inproceedings %}
+{% endcapture %}
+<h3 class="type" style="counter-reset:bibitem {{ category_counter | plus:1 }}">Peer-review conference and workshop papers</h3>
 {% bibliography -f {{site.scholar.bibliography}} -q @inproceedings %}
 
-<h3 class="type">Edited book chapters</h3>
+{% capture category_counter %}
+{% bibliography_count -f {{site.scholar.bibliography}} -q @incollection %}
+{% endcapture %}
+<h3 class="type" style="counter-reset:bibitem {{ category_counter | plus:1 }}">Edited book chapters</h3>
 {% bibliography -f {{site.scholar.bibliography}} -q @incollection %}
 
-<h3 class="type">Other</h3>
+{% capture category_counter %}
+{% bibliography_count -f {{site.scholar.bibliography}} -q @misc|@phdthesis|@mastersthesis %}
+{% endcapture %}
+<h3 class="type" style="counter-reset:bibitem {{ category_counter | plus:1 }}">Other</h3>
 {% bibliography -f {{site.scholar.bibliography}} -q @misc|@phdthesis|@mastersthesis %}
