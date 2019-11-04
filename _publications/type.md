@@ -18,7 +18,7 @@ social: true
 {% capture category_counter %}
 {% bibliography_count -f {{site.scholar.bibliography}} -q @inproceedings %}
 {% endcapture %}
-<h3 class="type" style="counter-reset:bibitem {{ category_counter | plus:1 }}">Peer-review conference and workshop papers</h3>
+<h3 class="type" style="counter-reset:bibitem {{ category_counter | plus:1 }}">Peer-reviewed conference and workshop papers</h3>
 {% bibliography -f {{site.scholar.bibliography}} -q @inproceedings %}
 
 {% capture category_counter %}
