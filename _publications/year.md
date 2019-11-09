@@ -18,6 +18,9 @@ social: true
 <div style="counter-reset:bibitem {{ paper_counter | plus:1 }}"></div>
 
 {% for y in (page.yearstart..year_end) reversed %}
-  <h3 class="year">{{y}}</h3>
+  <div class="spd-pub-group">
+    <span>{{y}}</span>
+    <span title="Expand/Collapse" class="spd-grp-show-hide float-right fas fa-angle-down"></span>
+  </div>
   {% bibliography -f {{site.scholar.bibliography}} -q @*[year={{y}}]* %}
 {% endfor %}

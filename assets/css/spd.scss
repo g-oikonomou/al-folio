@@ -48,3 +48,13 @@ ol.bibliography > li {
 ol.bibliography > li > span.spd-bib-row {
     display: inline;
 }
+
+.spd-pub-group {
+    border-bottom: 1px solid $light-gray;
+    color: $light-gray;
+    margin: 0px -1em 0px -1em;
+    padding-top: 1ex;
+    text-align: left;
+    font-size: 30px; 
+    line-height: 1;
+}
