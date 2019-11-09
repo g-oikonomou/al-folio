@@ -35,7 +35,7 @@ ol.bibliography {
     list-style-type: none;
 }
 
-ol.bibliography > li:before{
+ol.bibliography > li:before {
     content: "[" counter(bibitem) "]";
     position: absolute;
     left: -3em;
