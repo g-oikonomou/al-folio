@@ -4,3 +4,16 @@
    You can also view the list
    <a href="/pubs/{{ page.link_to }}">arranged by {{ page.link_to }}</a>.
 </div>
+
+<p>
+  <div class="btn-group btn-group-sm" role="group">
+    <a id="show-hide-details" class="btn btn-sm btn-outline-dark" role="button" title="Show / Hide Details">
+      <span class="fas fa-compress-arrows-alt"></span>
+      <span>Details</span>
+    </a>
+    <a href="/pubs/{{ page.link_to }}" class="btn btn-sm btn-outline-dark" role="button" title="Type">
+      <span class="fas fa-sort"></span>
+      <span>By {{ page.link_to }}</span>
+    </a>
+  </div>
+</p>
