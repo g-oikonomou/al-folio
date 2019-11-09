@@ -27,7 +27,7 @@
         display: none;
     }
     
-    .page-link{
+    .al-folio-page-link{
         line-height: $line-height;
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -77,7 +77,7 @@
             padding-bottom: 5px;
         }
 
-        .page-link {
+        .al-folio-page-link {
             display: block;
             padding: 5px 10px;
 
