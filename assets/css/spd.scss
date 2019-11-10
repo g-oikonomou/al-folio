@@ -91,3 +91,11 @@ ol.bibliography > li > div > div.spd-bibentry-bibtex {
 	line-height: 1.5;
 	border-radius: .2rem;
 }
+
+div.btn-group > a.btn-outline-secondary.disabled {
+	color: #cccccc;
+}
+
+div.btn-group > a.btn-outline-secondary {
+	color: #6c757d;
+}
