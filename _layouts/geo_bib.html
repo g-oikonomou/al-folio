@@ -46,21 +46,21 @@
   <div class="text-right">
     <div class="btn-group btn-group-sm spd-bibentry-buttons" role="group">
       {% if entry.oa-url %}
-        <a href="{{ entry.oa-url }}" title="Open-Access Version" class="ai ai-open-access btn btn-default btn-outline-dark" role="button"></a>
+        <a href="{{ entry.oa-url }}" title="Open-Access Version" class="ai ai-open-access btn btn-default btn-outline-secondary" role="button"></a>
       {% else %}
-        <a class="ai ai-open-access btn btn-default btn-outline-dark disabled" role="button"></a>
+        <a class="ai ai-open-access btn btn-default btn-outline-secondary disabled" role="button"></a>
       {% endif %}
 
       {% if entry.doi %}
-        <a href="http://dx.doi.org/{{ entry.doi }}" title="DOI" class="ai ai-doi btn btn-default btn-outline-dark" role="button"></a>
+        <a href="http://dx.doi.org/{{ entry.doi }}" title="DOI" class="ai ai-doi btn btn-default btn-outline-secondary" role="button"></a>
       {% else %}
-        <a class="ai ai-doi btn btn-default btn-outline-dark disabled" role="button"></a>
+        <a class="ai ai-doi btn btn-default btn-outline-secondary disabled" role="button"></a>
       {% endif %}
 
       {% if entry.gsid %}
-        <a href="http://scholar.google.com/scholar?cites={{ entry.gsid }}" title="Cited by" class="ai ai-google-scholar btn btn-default btn-outline-dark"></a>
+        <a href="http://scholar.google.com/scholar?cites={{ entry.gsid }}" title="Cited by" class="ai ai-google-scholar btn btn-default btn-outline-secondary"></a>
       {% else %}
-        <a class="ai ai-google-scholar btn btn-default btn-outline-dark disabled" role="button"></a>
+        <a class="ai ai-google-scholar btn btn-default btn-outline-secondary disabled" role="button"></a>
       {% endif %}
 
       <a class="fa fa-book show-hide-bibentry btn btn-default btn-outline-dark" role="button" title="Bib Entry (Show/Hide)"></a>
