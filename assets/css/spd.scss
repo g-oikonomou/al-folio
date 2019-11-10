@@ -54,7 +54,7 @@ ol.bibliography > li {
     counter-increment: bibitem -1;
 }
 
-ol.bibliography > li > span.spd-bib-row {
+ol.bibliography > li > div > div.spd-bib-row {
     display: inline;
 }
 

@@ -1,43 +1,46 @@
 ---
 ---
-<span id="{{entry.key}}" class="spd-bib-row">
-  {%- for author in entry.author_array -%}
-    {%- unless forloop.first -%}
-    ,
-    {% endunless %}
-    {%- if author.last == site.scholar.last_name -%}
-      <em>{{author.first | slice: 0}}. {{author.last}}</em>
-    {%- else -%}
-      {%- if site.data.coauthors[author.last] -%}
-        <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first | slice: 0}}. {{author.last}}</a>
+<div id="{{entry.key}}">
+  <div class="spd-bib-row">
+    {%- for author in entry.author_array -%}
+      {%- unless forloop.first -%}
+      ,
+      {% endunless %}
+      {%- if author.last == site.scholar.last_name -%}
+        <em>{{author.first | slice: 0}}. {{author.last}}</em>
       {%- else -%}
-        {{author.first | slice: 0}}. {{author.last}}
+        {%- if site.data.coauthors[author.last] -%}
+          <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first | slice: 0}}. {{author.last}}</a>
+        {%- else -%}
+          {{author.first | slice: 0}}. {{author.last}}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    , "{{entry.title}}"
+    {%- if entry.type == "article" -%}
+      , <em>{{entry.journal}}</em>
+    {%- elsif entry.type == "inproceedings" -%}
+      , <em>In {{entry.booktitle}}</em>
+    {%- endif -%}
+    {%- if entry.volume -%}
+      , {{ entry.volume }}
+      {%- if entry.number -%}
+        ({{ entry.number }})
       {%- endif -%}
     {%- endif -%}
-  {%- endfor -%}
-  , "{{entry.title}}"
-  {%- if entry.type == "article" -%}
-    , <em>{{entry.journal}}</em>
-  {%- elsif entry.type == "inproceedings" -%}
-    , <em>In {{entry.booktitle}}</em>
-  {%- endif -%}
-  {%- if entry.volume -%}
-    , {{ entry.volume }}
-    {%- if entry.number -%}
-      ({{ entry.number }})
+    {%- if entry.pages -%}
+      , pp. {{ entry.pages }}
     {%- endif -%}
-  {%- endif -%}
-  {%- if entry.pages -%}
-    , pp. {{ entry.pages }}
-  {%- endif -%}
-  {%- if entry.type == "article" and entry.publisher -%}
-    , {{ entry.publisher }}
-  {%- endif -%}
-  {%- if entry.year -%}
-    , {{ entry.year }}
-  {%- endif -%}
-  {% if entry.note %}
-    ({{ entry.note -}})
-  {%- endif -%}
+    {%- if entry.type == "article" and entry.publisher -%}
+      , {{ entry.publisher }}
+    {%- endif -%}
+    {%- if entry.year -%}
+      , {{ entry.year }}
+    {%- endif -%}
+    {% if entry.note %}
+      ({{ entry.note -}})
+    {%- endif -%}
 
-</span>
+  </div>
+
+</div>
