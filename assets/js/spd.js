@@ -9,6 +9,16 @@ $(document).ready(function() {
     });
   });
 
+  // Show/hide the abstract for a specific publication
+  $('.show-hide-abstract').click(function() {
+    $(this).parent().parent().parent().children('.spd-bibentry-abstract').slideToggle();
+  });
+
+  // Show/hide the bib entry for a specific publication
+  $('.show-hide-bibentry').click(function() {
+    $(this).parent().parent().parent().children('.spd-bibentry-bibtex').slideToggle();
+  });
+
   // Show/hide the details in a publication page
   $('#show-hide-details').click(function() {
     var the_button = $(this).children('.fas');
@@ -17,9 +27,8 @@ $(document).ready(function() {
     $('.bibliography > li').toggleClass('without-before-element')
     $('.bibliography').toggleClass('no-margins')
     the_button.toggleClass('fa-compress-arrows-alt').toggleClass('fa-expand-arrows-alt');
-    $('#preamble').slideToggle();
-    $('.abstract').slideUp();
-    $('.bibref').slideToggle();
+    $('.spd-bibentry-buttons').slideToggle();
+    $('.spd-bibentry-detail').slideUp();
   });
 
 });
