@@ -1,3 +1,5 @@
+all: build
+
 # Local variable overrides and additional make targets, if available
 -include Makefile.local
 
@@ -9,8 +11,6 @@ CONFIG_YML ?= _spd_gr_config.yml
 
 # Common flags for all jekyll commends
 JEKYLL_FLAGS += --config $(CONFIG_YML)
-
-all: build
 
 # Note: The make targets below will run jekyll using the default destination
 #
