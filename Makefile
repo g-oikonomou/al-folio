@@ -3,7 +3,7 @@ all: build
 # Local variable overrides and additional make targets, if available
 -include Makefile.local
 
-.PHONY: all clean build serve deploy
+.PHONY: all clean build serve
 
 JEKYLL = bundle exec jekyll
 
