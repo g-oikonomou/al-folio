@@ -83,6 +83,6 @@ an open source serial boot loader project.
 Developer of Contiki's support for 8051-based devices, such as as the TI
 CC2530/31 and the Sensinode CC2430-based sensors. These ports are no longer
 maintained, but for historic purposes
-[here is some info](github.com/contiki-os/contiki/wiki/8051-Based-Platforms)
+[here is some info](https://github.com/contiki-os/contiki/wiki/8051-Based-Platforms)
 and a related
-[blog entry](href="http://blog.spd.gr/2011/12/contiki-for-cc2530-with-uipv6rpl.html).
+[blog entry](http://blog.spd.gr/2011/12/contiki-for-cc2530-with-uipv6rpl.html).
