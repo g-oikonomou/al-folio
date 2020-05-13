@@ -28,7 +28,7 @@ last_updated: # leave blank if you don't want to display last updated
 # To achieve this, change serve_og_meta to true and then provide the URL of the
 # preview image as the value of og_image.
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
-og_image: https://repository-images.githubusercontent.com/218404858/82da6200-fc3f-11e9-9318-58641925a1f4 # The site-wide (default for all links) Open Graph preview image
+og_image: https://spd.gr/assets/img/og-preview.jpeg # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
