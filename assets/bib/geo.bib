@@ -75,15 +75,6 @@
   abstract = {This paper presents a novel wearable device: the SPHERE Wearable 3. The Wearable 3 is a wrist-worn sensor node tailored for low maintenance residential health and behaviour monitoring. It features multiple inertial measurement sensors, as well as a heart-rate sensor, capacitive button, and OLED screen. The Wearable 3 builds on our experience with previous generations of wearable sensing nodes while adding novel features, including interactive elements. We present a novel two-way communication based on a customized implementation of the Bluetooth Low Energy (BLE) protocol to connect the Wearable 3 with a gateway device, and describe various optimizations of energy consumption. The Wearable 3 is currently being deployed in residential homes in Bristol, UK, as part of a project aiming to collect diagnostic data from early-stage Alzheimer’s patients.},
 }
 
-@inproceedings{Dilmore-2019-softcom,
-  title = {Intelligent and Dynamic Wi-Fi Bond Interface Selection using Software Defined Networking},
-  author = {Dilmore, Michael and Doufexi, Angela and Oikonomou, George},
-  booktitle = {Proc SoftCOM},
-  year = {2019},
-  note = {accepted, to appear},
-  abstract ={This paper investigates predictive, dynamic bond interface selection using Software Defined Networking in large-scale, highly-loaded Wi-Fi networks. A novel, MatLab-based framework for Wi-Fi interface bonding at the Link Layer is presented utilising existing single-interface analysis by Bianchi and Chatzimisios, and used to evaluate the throughout performance of the current, static selection approach of implementations such as Linux Bonding. A predictive, centralised, SDN-assisted algorithm for bond interface selection is presented and evaluated, and shown to improve overall bonding efficiency by up to 11.25%. Control plane latency analysis suggests careful management of configuration updates is required when link delay is high.}
-}
-
 @inproceedings{Boukley-2019-PIMRC,
   title = {EVM Prediction for Massive MIMO},
   author = {Boukley Hassan, Wael and Angela Doufexi and George Oikonomou and Mark Beach},
@@ -91,6 +82,7 @@
   month = sep,
   booktitle = {Proc. IEEE PIMRC},
   doi = {10.1109/PIMRC.2019.8904437},
+  gsid = {9004208396109384086},
   oa-url = {https://research-information.bris.ac.uk/en/publications/evm-prediction-for-massive-mimo(8448efa4-1ba5-4a26-90ca-45232ff442ba).html},
   abstract = {Signal to interference plus noise ratio (SINR) is a widely common performance metric used in the majority of massive multiple-input, multiple-output (Ma-MIMO) research. This metric requires prior knowledge of the user channel vectors and the interference caused by inaccurate channel state information (CSI). However, the interference caused by inaccurate CSI can't be calculated for realworld scenarios. On the other hand, a comprehensive performance indicator can be achieved by the Error Vector Magnitude (EVM) metric in real-world scenarios. This considers all impairments upon the transmitted symbol as seen at the receiver. However, measuring the EVM values for a subset of users requires each user to retransmit data symbols. This paper presents an estimation method with high accuracy by associating EVM to SINR values for Ma-MIMO with zero-forcing (ZF) and Minimum Mean Square Error (MMSE). Also introduced is a novel EVM prediction method for subset of users taken from the original set of simultaneous users in a single cell Ma-MIMO. This method jointly relies on the channel correlation between users and the EVM performance to predict the EVM values for a subset of the available users without the need to retransmit data symbols. This method considers the user channel vector and the interference caused by inaccurate CSI, which make it suitable for Ma-MIMO algorithms, such as user grouping and power control. Real-world experimental data-sets with real-time results are carried out to validate the EVM prediction method using software-defined radio Ma-MIMO testbed.},
 }
@@ -116,6 +108,8 @@
   year = {2019},
   month = jun,
   booktitle = {Proc. IEEE FMEC},
+  doi = {10.1109/FMEC.2019.8795335},
+  gsid = {4635599596477921932},
   oa-url = {https://research-information.bristol.ac.uk/en/publications/the-advantage-of-computation-offloading-in-multiaccess-edge-computing(c528b331-9ae0-436f-961e-9976ed62bba9).html},
   abstract = {Computation offloading plays a critical role inreducing task completion time for mobile devices. The advantagesof computation offloading to cloud resources in Mobile CloudComputing have been widely considered. In this paper, we haveinvestigated different scenarios for offloading to less distantMulti-Access Edge Computing (MEC) servers for multiple userswith a range of mobile devices and computational tasks. Wepresent detailed simulation data for how offloading can bebeneficial in a MEC network with varying quantitative mobileuser demand, heterogeneity in mobile device on-board and MECprocessor speeds, computational task complexity, communicationspeeds, link access delays and mobile device user numbers.Unlike previous work where simulations considered only limitedcommunication speeds for offloading, we have extended the rangeof link speeds and included two types of communication delay.We find that more computationally complex applications areoffloaded preferentially (especially with the higher server:mobiledevice processor speed ratios) while low link speeds and anydelays caused by network delays or excessive user numbersdegrade any advantages in reduced task completion times offeredby offloading. Additionally, significant savings in energy usage bymobile devices are guaranteed except at very low link speeds.},
 }
@@ -127,6 +121,7 @@
   publisher = {Association for Computing Machinery (ACM)},
   year = {2019},
   month = feb,
+  pages = {206 -- 207},
   oa-url = {https://research-information.bristol.ac.uk/en/publications/atomicsdn(35df9370-3ded-45dc-acc2-26bd36aad29b).html},
   gsid = {15963983663240748841},
   abstract = {We present Atomic-SDN, a highly flexible framework capable of dynamically scheduling synchronous flooding phases to accommodate multiple traffic patterns resulting from application-level requirements. Specifically, Atomic-SDN accommodates the complex and varying traffic generated in a Software Defined Networking (SDN) control solutions for low-power wireless networks, where the high-overhead and centralized nature of SDN causes considerable problems due to the constrained nature of the network. By utilizing the high-reliability and low-latency properties of synchronous flooding, our results show that Atomic-SDN is capable of providing minimal bounded latency guarantees for network-wide SDN operations. This reduces the time to perform SDN operations on all nodes by orders-of-magnitude, and allows core SDN concepts to be pushed to the very edge of IoT networks.},
@@ -429,21 +424,8 @@ keywords = "Rate/Link adaptation, Software-Defined Networking (SDN), SDN agent, 
   abstract = {Synchronized communication has recently emerged as a prime option for low-power critical applications. Solutions such as Glossy or Time Slotted Channel Hopping (TSCH) have demonstrated end-to-end reliability upwards of 99.99%. In this context, the IETF Working Group 6TiSCH is currently standardizing the mechanisms to use TSCH in low-power IPv6 scenarios. This paper identifies a number of challenges when it comes to implementing the 6TiSCH stack. It shows how these challenges can be addressed with practical solutions for locking, queuing, scheduling and other aspects. With this implementation as an enabler, we present an experimental validation and comparison with state-of-the-art MAC protocols. We conduct fine-grained energy profiling, showing the impact of link-layer security on packet transmission. We evaluate distributed time synchronization in a 340-node testbed, and demonstrate that tight synchronization (hundreds of microseconds) can be achieved at very low cost (0.3% duty cycle, 0.008% channel utilization). We finally compare TSCH against traditional MAC layers: low-power listening (LPL) and CSMA, in terms of reliability, latency and energy. We show that with proper scheduling, TSCH achieves by far the highest reliability, and outperforms LPL in both energy and latency.},
 }
 
-@INPROCEEDINGS{Elsts-2017-SenseApp,
-  title = {Microsecond-accuracy time synchronization using the IEEE 802.15.4 TSCH Protocol},
-  author = {Atis Elsts and Simon Duquennoy and Xenofon Fafoutis and George Oikonomou and Robert Piechocki and Ian Craddock},
-  year = {2017},
-  month = {2},
-  doi = {10.1109/LCN.2016.042},
-  oa-url = {http://research-information.bristol.ac.uk/en/publications/microsecondaccuracy-time-synchronization-using-the-ieee-802154-tsch-protocol(2e47abe7-60e9-48a7-9f09-9fe7f4859ccb).html},
-  booktitle = {Proc. IEEE SenseApp},
-  publisher = {IEEE},
-  gsid = {11807852472963901506},
-  abstract = {Time-Slotted Channel Hopping from the IEEE 802.15.4-2015 standard requires that network nodes are tightly time-synchronized. Existing implementations of TSCH on embedded hardware are characterized by tens-of-microseconds large synchronization errors; higher synchronization accuracy would enable reduction of idle listening time on receivers, in this way decreasing the energy required to run TSCH. For some applications, it would also allow to replace dedicated time synchronization mechanisms with TSCH. We show that time synchronization errors in the existing TSCH implementations on embedded hardware are caused primarily by imprecise clock drift estimations, rather than by real unpredictable drift variance. By estimating clock drift more precisely and by applying adaptive time compensation on each node in the network, we achieve microsecond accuracy time synchronization on point-to-point links and a <2 microsecond end-to-end error in a 7-node line topology. Our solution is implemented in the Contiki operating system and tested on Texas Instruments CC2650-based nodes, equipped with common off-the-shelf hardware clock sources (20 ppm drift). Our implementation uses only standard TSCH control messages and is able to keep radio duty cycle below 1%.}
-}
-
 @ARTICLE{Cooper-2017-jof,
-  title = {An intelligent hot-desking model harnessing the power of occupancy sensing},
+  title = {An intelligent hot-desking model harnessing the power of occupancy sensing data},
   author = {Peter Cooper and Konstantinos Maraslis and Theo Tryfonas and George Oikonomou},
   journal = {Journal of Facilities},
   publisher = {Emerald Group Publishing Limited},
@@ -488,6 +470,7 @@ keywords = "Rate/Link adaptation, Software-Defined Networking (SDN), SDN agent, 
   booktitle = {Proc. IEEE WF-IoT},
   oa-url = {http://research-information.bristol.ac.uk/en/publications/guard-time-optimisation-and-adaptation-for-energy-efficient-multihop-tsch-networks(e72d25b2-2193-4b8b-ad01-9a12392e624e).html},
   doi = {10.1109/WF-IoT.2016.7845475},
+  gsid = {9085824851134266013},
   publisher = {IEEE},
   abstract = {In the IEEE 802.15.4-2015 standard, Time Slotted Channel Hopping (TSCH) aims to guarantee high-level network reliability by keeping nodes time-synchronised. In order to ensure successful communication between a sender and a receiver, the latter starts listening shortly before the expected time of a MAC layer frame’s arrival. The offset between the time a node starts listening and the estimated time of frame arrival is called guard time and it aims to reduce the probability of missed frames due to clock drift. In this paper, we investigate the impact of the guard time on network performance. We identify that, when using the 6tisch minimal schedule, the most significant cause of energy consumption is idle listening during guard time. Therefore, we first perform mathematical modelling on a TSCH link to identify the guard time that maximises the energy-efficiency of the TSCH network in single hop topology. We then continue in multi-hop network, where we empirically adapt the guard time locally at each node depending its distance, in terms of hops, from the sink. Our performance evaluation results, conducted using the Contiki OS, demonstrate that the proposed decentralised guard time adaptation can reduce the energy consumption by up to 40\%, without compromising network reliability.}
 }
@@ -549,7 +532,8 @@ keywords = "Rate/Link adaptation, Software-Defined Networking (SDN), SDN agent, 
   author = {Atis Elsts and Simon Duquennoy and Xenofon Fafoutis and George Oikonomou and Robert Piechocki and Ian Craddock},
   year = {2016},
   month = nov,
-  booktitle = {Proc. IEEE SenseApp},
+  booktitle = {Proc. IEEE LCN},
+  doi = {10.1109/LCN.2016.042},
   gsid = {11807852472963901506},
   publisher = {IEEE},
   oa-url = {https://research-information.bristol.ac.uk/en/publications/microsecondaccuracy-time-synchronization-using-the-ieee-802154-tsch-protocol(2e47abe7-60e9-48a7-9f09-9fe7f4859ccb).html},
@@ -596,6 +580,7 @@ keywords = "Rate/Link adaptation, Software-Defined Networking (SDN), SDN agent, 
   pages = {142--158},
   booktitle = {Proc. HICSS},
   doi = {10.1007/978-3-662-53416-8_9},
+  gsid = {15266394018065816651},
   oa-url = {http://research-information.bristol.ac.uk/en/publications/an-intelligent-hotdesking-model-based-on-occupancy-sensor-data-and-its-potential-for-social-impact(8969e538-e87e-4737-8340-ffba18fa7ef7).html},
   abstract = {In this paper we develop a model that utilises occupancy sensor data in a commercial Hot-Desking environment. Hot-Desking (or ‘office-hoteling’) is a method of office resource management that emerged in the nineties hoping to reduce the real estate costs of workplaces, by allowing offices to be used interchangeably among employees. We show that sensor data can be used to facilitate office resources management, in our case desk allocation in a Hot-Desking environment, with results that outweigh the costs of occupancy detection. We are able to optimise desk utilisation based on quality occupancy data and also demonstrate the effectiveness of the model by comparing it to a theoretically ideal, but impractical in real life, model. We then explain how a generalisation of the model that includes input from human sensors (e.g. social media) besides the presence sensing and pre-declared personal preferences, can be used, with potential impact on wider community scale.},
 }
