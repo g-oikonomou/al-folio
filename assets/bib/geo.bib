@@ -420,19 +420,6 @@ keywords = "Rate/Link adaptation, Software-Defined Networking (SDN), SDN agent, 
   abstract = {Synchronized communication has recently emerged as a prime option for low-power critical applications. Solutions such as Glossy or Time Slotted Channel Hopping (TSCH) have demonstrated end-to-end reliability upwards of 99.99%. In this context, the IETF Working Group 6TiSCH is currently standardizing the mechanisms to use TSCH in low-power IPv6 scenarios. This paper identifies a number of challenges when it comes to implementing the 6TiSCH stack. It shows how these challenges can be addressed with practical solutions for locking, queuing, scheduling and other aspects. With this implementation as an enabler, we present an experimental validation and comparison with state-of-the-art MAC protocols. We conduct fine-grained energy profiling, showing the impact of link-layer security on packet transmission. We evaluate distributed time synchronization in a 340-node testbed, and demonstrate that tight synchronization (hundreds of microseconds) can be achieved at very low cost (0.3% duty cycle, 0.008% channel utilization). We finally compare TSCH against traditional MAC layers: low-power listening (LPL) and CSMA, in terms of reliability, latency and energy. We show that with proper scheduling, TSCH achieves by far the highest reliability, and outperforms LPL in both energy and latency.},
 }
 
-@INPROCEEDINGS{Elsts-2017-SenseApp,
-  title = {Microsecond-accuracy time synchronization using the IEEE 802.15.4 TSCH Protocol},
-  author = {Atis Elsts and Simon Duquennoy and Xenofon Fafoutis and George Oikonomou and Robert Piechocki and Ian Craddock},
-  year = {2017},
-  month = {2},
-  doi = {10.1109/LCN.2016.042},
-  oa-url = {http://research-information.bristol.ac.uk/en/publications/microsecondaccuracy-time-synchronization-using-the-ieee-802154-tsch-protocol(2e47abe7-60e9-48a7-9f09-9fe7f4859ccb).html},
-  booktitle = {Proc. IEEE SenseApp},
-  publisher = {IEEE},
-  gsid = {11807852472963901506},
-  abstract = {Time-Slotted Channel Hopping from the IEEE 802.15.4-2015 standard requires that network nodes are tightly time-synchronized. Existing implementations of TSCH on embedded hardware are characterized by tens-of-microseconds large synchronization errors; higher synchronization accuracy would enable reduction of idle listening time on receivers, in this way decreasing the energy required to run TSCH. For some applications, it would also allow to replace dedicated time synchronization mechanisms with TSCH. We show that time synchronization errors in the existing TSCH implementations on embedded hardware are caused primarily by imprecise clock drift estimations, rather than by real unpredictable drift variance. By estimating clock drift more precisely and by applying adaptive time compensation on each node in the network, we achieve microsecond accuracy time synchronization on point-to-point links and a <2 microsecond end-to-end error in a 7-node line topology. Our solution is implemented in the Contiki operating system and tested on Texas Instruments CC2650-based nodes, equipped with common off-the-shelf hardware clock sources (20 ppm drift). Our implementation uses only standard TSCH control messages and is able to keep radio duty cycle below 1%.}
-}
-
 @ARTICLE{Cooper-2017-jof,
   title = {An intelligent hot-desking model harnessing the power of occupancy sensing},
   author = {Peter Cooper and Konstantinos Maraslis and Theo Tryfonas and George Oikonomou},
