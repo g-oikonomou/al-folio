@@ -52,13 +52,13 @@
       {% endif %}
 
       {% if entry.doi %}
-        <a href="http://dx.doi.org/{{ entry.doi }}" title="DOI" class="ai ai-doi btn btn-default btn-outline-secondary" role="button"></a>
+        <a href="https://dx.doi.org/{{ entry.doi }}" title="DOI" class="ai ai-doi btn btn-default btn-outline-secondary" role="button"></a>
       {% else %}
         <a class="ai ai-doi btn btn-default btn-outline-secondary disabled" role="button"></a>
       {% endif %}
 
       {% if entry.gsid %}
-        <a href="http://scholar.google.com/scholar?cites={{ entry.gsid }}" title="Cited by" class="ai ai-google-scholar btn btn-default btn-outline-secondary"></a>
+        <a href="https://scholar.google.com/scholar?cites={{ entry.gsid }}" title="Cited by" class="ai ai-google-scholar btn btn-default btn-outline-secondary"></a>
       {% else %}
         <a class="ai ai-google-scholar btn btn-default btn-outline-secondary disabled" role="button"></a>
       {% endif %}
