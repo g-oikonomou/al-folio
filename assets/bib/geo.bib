@@ -1,3 +1,53 @@
+@article{Contik-NG,
+  title = {The Contiki-NG open source operating system for next generation {IoT} devices},
+  author = {George Oikonomou and Simon Duquennoy and Atis Elsts and Joakim Eriksson and Yasuyuki Tanaka and Nicolas Tsiftes},
+  journal = {SoftwareX},
+  volume = {18},
+  pages = {101089},
+  year = {2022},
+  issn = {2352-7110},
+  doi = {10.1016/j.softx.2022.101089},
+  oa-url = {https://doi.org/10.1016/j.softx.2022.101089},
+  gsid = {380550636315716590},
+  abstract = {Contiki-NG (Next Generation) is an open source, cross-platform operating system for severely constrained wireless embedded devices. It focuses on dependable (reliable and secure) low-power communications and standardised protocols, such as 6LoWPAN, IPv6, 6TiSCH, RPL, and CoAP. Its primary aims are to (i) facilitate rapid prototyping and evaluation of Internet of Things research ideas, (ii) reduce time-to-market for Internet of Things applications, and (iii) provide an easy-to-use platform for teaching embedded systems-related courses in higher education. Contiki-NG started as a fork of the Contiki OS and retains many of its original features. In this paper, we discuss the motivation behind the creation of Contiki-NG, present the most recent version (v4.7), and highlight the impact of Contiki-NG through specific examples.},
+}
+
+@inproceedings{Zakrzewski-2022-iscc,
+  author = {Robert Zakrzewski and Martin, {Trevor P} and George Oikonomou},
+  title = {Anomaly Detection in Logical Sub-Views of WSNs},
+  booktitle = {Proc. IEEE ISCC},
+  year = {2022},
+  note = {accepted, to appear},
+  abstract = {Wireless sensor networks are often distributed, diverse, and large making their monitoring hard. One way to tackle it is to focus on part of the system by creating logical sub-views which can be seen as proxies of the overall system operations. In this manuscript, logical sub-views consist of traffic aggregators and their topology which are monitored for anomaly. The aggregators are selected based on diversity and importance in the system and they are modelled as graphs to capture aggregation topology and data distributions. The aggregators' selection criteria, the method for comparison of partially overlapping sub-views, normal aggregation profiles acquisition, and measures of anomaly are proposed. A simulated wireless sensor network is used to acquire data at the edge and apply the method. We demonstrate that focusing on system sub-views and comparing aggregation profiles facilitates anomaly detection also caused elsewhere in the system and the impact the anomaly has on aggregators.},
+}
+
+@inproceedings{Zakrzewski-2022-meco-b,
+  author = {Robert Zakrzewski and Martin, {Trevor P} and George Oikonomou},
+  title = {Graph modelled system change detection in WSNs},
+  booktitle = {Proc. MECO},
+  year = {2022},
+  note = {accepted, to appear},
+  abstract = {Graphs are suitable to model topology and data patterns in systems such as WSNs. To detect change, there is a need for graph comparison, a computationally demanding task difficult to run on constrained devices. For monitoring, the definition of normal patterns, and deviation from normal are required. In this contribution a flexible graph comparison method allowing monitoring of normal patterns and metrics providing measures of deviation from normal are proposed. In this manuscript, we apply the method to the system modelled by synthetic and random graphs. We demonstrate that the fingerprints of normal topology and data patterns can be acquired with the measures of deviation from normal. We discuss applicability of the method at the edge of WSNs.},
+}
+
+@inproceedings{Zakrzewski-2022-meco-a,
+  author = {Robert Zakrzewski and Martin, {Trevor P} and George Oikonomou},
+  title = {Topology Change Localisation in WSNs},
+  booktitle = {Proc. MECO},
+  year = {2022},
+  note = {accepted, to appear},
+  abstract = {Wireless Sensor Networks are often distributed, diverse, and large making their monitoring and anomaly localisation hard. Anomaly may pertain to parts of topology unknown in the ground truth. It is advantageous to localise anomaly, ideally using data at the edge which helps to implement countermeasures such as threat containment and attacker localisation. In this manuscript a method allowing localisation of sensors with malicious topology change and ground truth acquisition is presented. A simulated wireless sensor network is used to acquire data at the edge and apply the method. We demonstrate detection of malicious topology change based on topology distance measure and localisation of sensors impacted by the change using the data available at the edge of WSN.},
+}
+
+@inproceedings{Kumar-2021-ucc,
+  title = {An urban sensing architecture as essential infrastructure for future cities},
+  author = {Vijay Kumar and George Oikonomou and Theo Tryfonas},
+  booktitle = {Proc. IEEE/ACM UCC},
+  doi = {10.1145/3492323},
+  gsid = {},
+  abstract = {Climate change and migration have become one of the most challenging problems for our civilization. In this context, city councils work hard to manage essential services for citizens such as waste collection, street lamp lighting, and water supply. Increasingly, digitalization and the Internet of Things (IoT) help cities improve services, increase productivity and reduce costs. However, to understand how this may happen, we explore the urban sensing capabilities from citizen- to city-scale, how sensing at different levels is interlinked, and the challenges of managing innovations based on IoT data and devices.Local authorities collaborate with researchers and deploy testbeds as a part of demonstration and research projects to perform the above data collection, improve city services, and support innovation. The data gathered is about indoor and outdoor environmental conditions, energy usage, built environment, structural health monitoring. Such monitoring requires IT infrastructure at three different tiers: at the endpoint, edge, and cloud. Managing infrastructure at all tiers with provisioning, connectivity, security updates of devices, user data privacy controls, visualization of data, multi-tenancy of applications, and network resilience, is challenging. So, in turn, we focus on performing a systematic study of the technical and non-technical challenges faced during the implementation, management, and deployment of devices into citizens' homes and public spaces.Our third piece of work explores IoT edge applications' resiliency and reliability requirements that vary from non-critical (best delivery efforts) to safety-critical with time-bounded guarantees. We investigate how to meet IoT application mixed-criticality QoS requirements in multi-communication networks.Finally, to demonstrate the principles of our framework in the real world, we implement an open-source air quality platform Open City Air Quality Platform (OpenCAQP), that merges a wide range of data sources and air pollution parameters into a single platform. The OpenCAQP allows citizens, environmentalists, data analysts, and developers to access and visualize that data.},
+}
+
 @inproceedings{Pope-2021-DATA,
  author = {Pope, James and Raimondo, Francesco and Kumar, Vijay and McConville, Ryan and Piechocki, Rob and Oikonomou, George and Pasquier, Thomas and Luo, Bo and Howarth, Dan and Mavromatis, Ioannis and Carnelli, Pietro and Sanchez-Mompo, Adrian and Spyridopoulos, Theodoros and Khan, Aftab},
  title = {Container Escape Detection for Edge Devices},
@@ -6,6 +56,8 @@
  doi = {10.1145/3485730.3494114},
  booktitle = {Proc. ACM SenSys},
  pages = {532–536},
+ oa-url = {https://research-information.bris.ac.uk/en/publications/container-escape-detection-for-edge-devices},
+ abstract = {Edge computing is rapidly changing the IoT-Cloud landscape. Various testbeds are now able to run multiple Docker-like containers developed and deployed by end-users on edge devices. However, this capability may allow an attacker to deploy a malicious container on the host and compromise it. This paper presents a dataset based on the Linux Auditing System, which contains malicious and benign container activity. We developed two malicious scenarios, a denial of service and a privilege escalation attack, where an adversary uses a container to compromise the edge device. Furthermore, we deployed benign user containers to run in parallel with the malicious containers. Container activity can be captured through the host system via system calls. Our time series auditd dataset contains partial labels for the benign and malicious related system calls. Generating the dataset is largely automated using a provided AutoCES framework. We also present a semi-supervised machine learning use case with the collected data to demonstrate its utility. The dataset and framework code are open-source and publicly available.}
 }
 
 @inproceedings{Baddeley-2021-EWSN,
