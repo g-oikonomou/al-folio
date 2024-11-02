@@ -52,7 +52,7 @@
           {% if site.scopus_id %}<a class="al-folio-page-link" href="https://www.scopus.com/authid/detail.uri?authorId={{ site.scopus_id }}" target="_blank" title="Scopus"><i class="ai ai-scopus"></i></a>{% endif %}
           {% if site.ieeexplore_id %}<a class="al-folio-page-link" href="https://ieeexplore.ieee.org/author/{{ site.ieeexplore_id }}" target="_blank" title="IEEE"><i class="ai ai-ieee"></i></a>{% endif %}
           {% if site.wos_id %}<a class="al-folio-page-link" href="https://www.webofscience.com/wos/author/record/{{ site.wos_id }}" target="_blank" title="WoS"><i class="ai ai-clarivate"></i></a>{% endif %}
-          {% if site.dblp_id %}<a href="https://dblp.org/pid/{{ site.dblp_id }}.html" target="_blank" title="DBLP"><i class="ai ai-dblp"></i></a>{% endif %}
+          {% if site.dblp_id %}<a class="al-folio-page-link" href="https://dblp.org/pid/{{ site.dblp_id }}.html" target="_blank" title="DBLP"><i class="ai ai-dblp"></i></a>{% endif %}
           {% if site.research_gate_profile %}<a class="al-folio-page-link" href="https://www.researchgate.net/profile/{{site.research_gate_profile}}/" target="_blank" title="ResearchGate"><i class="ai ai-researchgate"></i></a>{% endif %}
           {% if site.github_username %}<a class="al-folio-page-link" href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>{% endif %}
           {% if site.stack_profile %}<a class="al-folio-page-link" href="https://stackoverflow.com/users/{{ site.stack_profile }}" target="_blank" title="stack overflow"><i class="fab fa-stack-overflow"></i></a>{% endif %}
