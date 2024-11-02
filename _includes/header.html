@@ -4,8 +4,10 @@
 
     {% if page.layout != "about" %}
     <span class="site-title">
+      <a class="al-folio-page-link" href="{{ site.baseurl | prepend: site.url }}/">
         {% assign name = site.name | split: ' ' %}
         {{ name | first }} {{ name | last }}
+      </a>
     </span>
     {% endif %}
 
@@ -23,7 +25,7 @@
 
       <div class="trigger">
         <!-- About -->
-        <a class="al-folio-page-link" href="{{ site.baseurl | prepend: site.url }}/">about</a>
+        <!-- <a class="al-folio-page-link" href="{{ site.baseurl | prepend: site.url }}/">about</a> -->
 
         <!-- Blog -->
         {% if site.blog_display %}
