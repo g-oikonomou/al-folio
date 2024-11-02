@@ -5,6 +5,165 @@
   doi = {10.48550/arXiv.2212.08525},
   year = {2022},
   abstract = {Security research has concentrated on converting operating system audit logs into suitable graphs, such as provenance graphs, for analysis. However, provenance graphs can grow very large requiring significant computational resources beyond what is necessary for many security tasks and are not feasible for resource constrained environments, such as edge devices. To address this problem, we present the \textit{resource-interaction graph} that is built directly from the audit log. We show that the resource-interaction graph's storage requirements are significantly lower than provenance graphs using an open-source data set with two container escape attacks captured from an edge device. We use a graph autoencoder and graph clustering technique to evaluate the representation for an anomaly detection task. Both approaches are unsupervised and are thus suitable for detecting zero-day attacks. The approaches can achieve f1 scores typically over 80\% and in some cases over 90\% for the selected data set and attacks.}
+@INCOLLECTION{Pope-2025-LNCS,
+  author = {Pope, James and Spyridopoulos, Theodoros and Kumar, Vijay and Raimondo, Francesco and Gunner, {Sam D} and Oikonomou, George and Pasquier, Thomas and McConville, Ryan and Carnelli, Pietro and {Sanchez Mompo}, Adrian and Mavromatis, Ioannis and Khan, Aftab},
+  editor = {Pitropakis, Nikolaos and Katsikas, Sokratis},
+  title = {Intrusion Detection at the IoT Edge Using Federated Learning},
+  bookTitle = {Security and Privacy in Smart Environments},
+  year = {2025},
+  pages = {98--119},
+  doi = {10.1007/978-3-031-66708-4_5},
+  oa-url = {https://hdl.handle.net/1983/ba3d077d-bd21-47e2-ae0a-bcc291c163e5},
+  gsid = {14989387774835503947},
+  abstract="With the proliferation of Internet of Things (IoT) technologies in urban environments, cities are increasingly deploying Edge processing nodes for urban sensing. This large-scale integration of Edge nodes and sensing endpoints raises significant security concerns. For instance, existing Intrusion Detection methods cannot scale well and do not consider the privacy and energy consumption implications that emerge when applied to those systems. In addition, the use of containerised applications managed by container orchestration platforms in these environments, while enabling diverse applications and allowing scanning of the container images, can still introduce vulnerabilities. This Chapter addresses the challenge of effectively detecting malicious activities in large-scale resource-constrained IoT systems. We introduce an unsupervised distributed learning solution employing Federated Learning (FL) for real-time anomaly detection across the IoT infrastructure. Our approach involves analysing Linux system call data through a Federated Learning Framework, significantly reducing the need for central data processing. The Chapter presents a comprehensive architectural overview of the system, its core components, and the methodology for deploying and updating anomaly detection models. It also provides the performance evaluation of our approach. Our results demonstrate that the size of the clients' datasets and the use of pre-trained models play a significant role in the performance of FL models. The work presented in this chapter was supported by UK Research and Innovation, Innovate UK [grant number 53707].",
+}
+
+@misc{Erdol-2024-xApp,
+  title = {xApp Distillation: AI-based Conflict Mitigation in B5G O-RAN},
+  author = {Hakan Erdol and Xiaoyang Wang and Robert Piechocki and George Oikonomou and Arjun Parekh},
+  year = {2024},
+  oa-url = {https://arxiv.org/abs/2407.03068},
+  doi = {10.48550/arXiv.2407.03068},
+  gsid = {13532490694523551184},
+  abstract = {The advancements of machine learning-based (ML) decision-making algorithms created various research and industrial opportunities. One of these areas is ML-based near-real-time network management applications (xApps) in Open-Radio Access Network (O-RAN). Normally, xApps are designed solely for the desired objectives, and fine-tuned for deployment. However, telecommunication companies can employ multiple xApps and deploy them in overlapping areas. Consider the different design objectives of xApps, the deployment might cause conflicts. To prevent such conflicts, we proposed the xApp distillation method that distills knowledge from multiple xApps, then uses this knowledge to train a single model that has retained the capabilities of Previous xApps. Performance evaluations show that compared conflict mitigation schemes can cause up to six times more network outages than xApp distillation in some cases.}
+}
+
+@inproceedings{fe49bc463f4448128beb036f7d87b29e,
+  title = {FlexBoT: A Scalable Architecture for Multi-Application Supporting BIoT Environments with Application Shifting at Runtime},
+  author = {Eker, Akin and Tryfonas, Theo and Oikonomou, George},
+  booktitle = {Proc. IFIP Networking},
+  pages = {186--194},
+  year = {2024},
+  doi = {10.23919/IFIPNetworking62109.2024.10619067},
+  oa-url = {https://hdl.handle.net/1983/fe49bc46-3f44-4812-8beb-036f7d87b29e},
+  gsid = {1794814709707166564},
+  abstract = {While existing approaches that integrate IoT and blockchain technologies have demonstrated efficiency, they often exhibit limitations by focusing on a single application scenario. These proposals require specific hardware configurations, resulting reduced adaptability and manageability when transitioning to new application scenarios and updating device configurations. Though, an additional management layer could mitigate vulnerabilities, it may also introduce performance and privacy issues, particularly as the system scales up rapidly. In response, this paper introduces an architecture for Blockchain of Things (BoT) systems, providing the flexibility to accommodate multiple application scenarios within a unified hardware infrastructure. Our methodology utilizes smart contracts for system orchestration, offering an agile and cost-effective alternative. The proposed architecture is designed mainly for IoT environments, ensuring scalability without the need for centralized authority or causing network centralization and associated vulnerabilities. Moreover, it facilitates real-time application scenario transitions through smart contracts. The obtained results demonstrate the proposal's capability to scale effectively in network size, and handle varying numbers of requests within each identified scenario type. Furthermore, the results support adoption of smart contract-based scenario transitioning in BoT environments.},
+}
+
+@article{Kumar-2024-IET-SmartCities,
+  title = {Sense (and) the City: From IoT sensors and Open Data Platforms to Urban Observatories},
+  author = {Kumar, Vijay and Gunner, {Sam D} and Pregnolato, Maria and Tully, Patrick and Georgalas, Nektarios and Oikonomou, George and Karatzas, Stylianos and Tryfonas, Theo},
+  year = {2024},
+  journal = {IET Smart Cities},
+  pages = {1--21},
+  oa-url = {https://doi.org/10.1049/smc2.12081},
+  doi = {10.1049/smc2.12081},
+  gsid = {8208362633224586343},
+  abstract = {Digitalisation and the Internet of Things (IoT) help city coun- cils improve services, increase productivity and reduce costs. City-scale monitoring of traffic and pollution enables the development of insights into low-air quality areas and the introduction of improvements. IoT provides a platform for the intelligent interconnection of everyday objects and has become an integral part of a citizen{\textquoteright}s life. Anyone can monitor from their fitness to the air quality of their immediate environment using everyday technologies. With caveats around privacy and accuracy, such data could even complement those collected by authorities at city- scale, for validating or improving policies. In this paper we explore the hierarchies of urban sensing from citizen- to city-scale, how sensing at different levels may be interlinked, and the challenges of managing the urban IoT. We provide examples from the UK, map the data gen- eration processes across levels of urban hierarchies and discuss the role of emerging sociotechnical urban sensing infrastructures, i.e., in- dependent, open, and transparent capabilities that facilitate stakeholder engagement and collection and curation of grassroots data. We discuss how such capabilities can become a conduit for alignment of community- and city-level action via an example of tracking the use of shared electric bicycles in Bristol, UK.},
+}
+
+@inproceedings{Eker-2024-SmartMoveChain,
+  title = {SmartMoveChain: A Proposal for Unified Scalable BMaaS for Smart Cities},
+  author = {Eker, Akin and Isik, {Gizay Kisa} and Tryfonas, Theo and Oikonomou, George},
+  year = {2024},
+  note = {accepted, to appear}
+  abstract = {Transportation systems typically follow predefined routes, leading to a cumbersome experience, especially for users relying on multiple services daily. Mobility-as-a-Service (MaaS), proposed as a solution, integrates various mobility devices and services, including bicycles, scooters, cars, taxis, bike-sharing, and more on a single digital platform, streamlining journey planning, ticketing, and personalized travel experiences. MaaS offers various transformative benefits such as a single digital platform unifying available mobility services a cost-effective, and seamless single-ticket experience for journeys. However, there are certain challenges to be addressed such as transparency, information asymmetry, and system complexity persist. To address these challenges, Blockchain technology emerges as a solution, providing decentralisation, security, and transparency. In this work, we analysed the proposals in the literature and industry, then we identified essential features and metrics for Blockchain-supported MaaS (BMaaS) systems. Lastly, we propose this conceptual design of a scalable and unifying BMaaS system, named SmartMoveChain, addressing the existing issues in the current MaaS systems for the latter simulation process.},
+}
+
+@inproceedings{Andrews-2023-cpsiotsec,
+  title = {Granular IoT Device Identification Using TF-IDF and Cosine Similarity},
+  author = {Andrews, Ashley and Oikonomou, George and Armour, Simon and Thomas, Paul and Cattermole, Thomas},
+  booktitle = {Proc. ACM CPSIoTSec},
+  pages = {91--99},
+  year = {2023},
+  oa-url = {https://doi.org/10.1145/3605758.3623492},
+  doi = {10.1145/3605758.3623492},
+  gsid = {10416430505967466923},
+  abstract = {Internet of things (IoT) devices are becoming more prevalent in home environments and are shown to be generally insecure. There have been many previous studies looking to identify unknown IoT devices on networks. To truly secure a network however, there is a need to identify unknown devices down to the granularity of firmware version; a problem previous studies have failed to solve. As devices change versions, it is expected that there would be subtle differences in the on-wire signatures that would be hard for a human analyst to notice, but easy for an NLP technique to identify. In this paper we extract keywords from both encrypted and unencrypted network traffic and first use UMAP with K-Means clustering to visualise the data and show that natural clusters form across our test dataset of 18 devices covering 61 versions. This analysis suggests that there are underlying patterns in the extracted keywords that could be detected by machine learning techniques. We then show that these patterns can be detected by proposing a novel technique using TF-IDF and cosine similarity that follows the clustering results to identify IoT devices down to the level of firmware version. We show that our chosen features are strong enough to work accurately across a range of device types, manufacturers, models and versions, and note the main observations found when trying to identify devices down to a firmware version. This approach to get granularity down to device version level achieves an accuracy of 67\% without being to the detriment of identifying device models, where we achieve an accuracy of 90\%.},
+booktitle = {Proceedings of the 5th Workshop on CPS&IoT Security and Privacy},
+}
+
+@INPROCEEDINGS{Eker-2023-WF-IoT,
+  title = {Public Blockchain in Support of Transactive Energy Markets},
+  author = {Eker, Akin and Tryfonas, Theo and Oikonomou, George},
+  booktitle = {Proc. IEEE WF-IoT},
+  year = {2023},
+  pages = {1--6},
+  doi = {10.1109/WF-IoT58464.2023.10539475},
+  oa-url = {https://hdl.handle.net/1983/4ba77282-ec39-4a99-ba58-973050b3fc66},
+  gsid = {4468283739719564817},
+  abstract = {Transactive Energy Markets (TEM) have the potential to reduce wasted energy, increase the utilisation of renewable energy resources and enable independence in the energy sector. Blockchain has been utilised in TEMs in the literature aiming to acquire transparency, security and trustless operations. Though public blockhain enables leveraged transparency and fairness, the majority of proposals suggest adoption of private or consortium blockchains mainly due to performance concerns. In this paper, we created a TEM environment where consumers, prosumers and suppliers bid for price agreement upon a game theory model and then deployed it on localised Ethereum blockchain infrastructure. To compare the performance, we created a centralized TEM environment keeping all the settings the same. The obtained results show that public blockchains may be adaptable to TEMs to enhance system transparency and fairness as well as automated and trustless transactions. Conducted test results show that our proposal exhibit a similar scalability trend as the referenced centralized system.},
+}
+
+@INPROCEEDINGS{Andrews-2023-WF-IoT,
+  title = {Reliable Identification of IoT Devices from Passive Network Traffic Analysis: Requirements and Recommendations},
+  author = {Andrews, Ashley and Oikonomou, George and Armour, Simon and Thomas, Paul and Cattermole, Thomas},
+  booktitle = {Proc. IEEE WF-IoT},
+  year = {2023},
+  pages = {1--6},
+  doi = {10.1109/WF-IoT58464.2023.10539470},
+  gsid = {14609532542931730506},
+  oa-url = {https://hdl.handle.net/1983/70065d42-dfe1-44fd-9816-565148362e66},
+  abstract = {Internet of Things (IoT) devices are becoming more widespread in networks and can give malicious actors new vectors to compromise networks. Of particular concern are devices running out-of-date firmware versions with known vulnerabilities. Securing real-world IoT networks therefore relies on knowing what devices are on a network and knowing what specific firmware versions they are running. At present, though, commercial solutions that include IoT device identification are not reliable at this level of granularity, and the academic literature has largely ignored the problem. In this paper, we highlight the shortcomings present in current IoT device identification and use these observations to develop a set of lab requirements. We then present our own lab setup for providing reliable real-world IoT device identification that meets this set of requirements. Building on this work, we develop a schema for documenting device versions and event histories that accompany network packet traces as metadata.},
+}
+
+@INPROCEEDINGS{Isik-2023-ITSC,
+  title = {E-scooter Sharing Platforms: Understanding Their Architecture and Cybersecurity Threats},
+  author = {Isik, {Gizay Kisa} and Tryfonas, Theo and Oikonomou, George},
+  booktitle = {Proc. IEEE ITSC},
+  year = {2023},
+  pages = {5909--5916},
+  doi = {10.1109/ITSC57777.2023.10421849}
+  gsid = {17265766491278275727},
+  oa-url = {https://hdl.handle.net/1983/b37a6d59-196b-4a39-8211-efb7f4065e63},
+  abstract = {E-scooter sharing platforms (ESPs) offer fast, affordable and flexible urban mobility solutions, with numerous benefits such as reducing traffic congestion, air pollution and carbon emissions. However, the long-term sustainability of the platform could be challenged by the threats and risks it faces because these can negatively impact the system and its users. The potential consequences may include the abuse of system resources, manipulation, denial of service (DoS) or data loss. In addition, breaches of users' personal information endanger the reputation of companies and the privacy and security of users. This paper describes a typical ESP system architecture so as to provide a better understanding of the potential threats it faces. The paper also presents a categorization of the risks so as to provide solutions. Risks include data breaches, privacy violations, service disruptions, DoS attacks, firmware and software vulnerabilities, GPS spoofing and breaches of physical security, including theft and vandalism. The paper contributes to the progress and development of ESP and supports the development of effective strategies for its long-term sustainability and security.},
+}
+
+@article{Erol-2023-DataInBrief,
+  title = {Multi-sensor, multi-device smart building indoor environmental dataset},
+  author = {Erol, Ufuk and Raimondo, Francesco and Pope, James and Gunner, {Sam D} and Kumar, Vijay and Mavromatis, Ioannis and Carnelli, Pietro and Spyridopoulos, Theodoros and Khan, Aftab and Oikonomou, George},
+  journal = {Data in Brief},
+  volume = {49},
+  pages = {109392},
+  year = {2023},
+  doi = {10.1016/j.dib.2023.109392},
+  oa-url = {https://www.sciencedirect.com/science/article/pii/S2352340923005024},
+  gsid = {4439854924824988615},
+  abstract = {A dataset of sensor measurements is presented. Our dataset contains discrete measurements of 8 IoT devices located in various places in a research lab at the University of Bristol. Nordic nRF52840 DK IoT devices periodically collects environmental data, such as temperature, humidity, pressure, gas, room light intensity, accelerometer; including also a measurement quality indicator. The measurements were taken every 10 seconds over a six-month period between February and September 2022. In addition, we provide Received Signal Strength Indicator (RSSI) of the IoT devices. The data files are formatted as CSV files. There are various software libraries available to access and read this file format. We provide “README.txt” file which explains the repository and how to use dataset. Each data file is named according to its creation date and, once it reaches a size of 1MB, it is compressed and archived. A new folder is created every week to store all the data files from that week automatically. The dataset can be used for drift detection such as malicious or anomaly detection algorithms. It can also be used for smart building applications like occupation detection. The dataset can be found at https://data.bris.ac.uk/data/dataset/fwlmb11wni392kodtyljkw4n2}
+}
+
+@inproceedings{Eker-2023-Indin,
+  title = {A Conceptual Architecture for Scalable Multi-Application Support in Blockchain-based IoT Environments},
+  author = {Eker, Akin and Tryfonas, Theo and Oikonomou, George"},
+  booktitle = {Proc. IEEE INDIN},
+  year = {2023},
+  doi = {10.1109/INDIN51400.2023.10217952},
+  gsid = {13025039823118482442},
+  oa-url = {https://hdl.handle.net/1983/7005a8c8-97ef-4b89-9e35-f2ced4cdd966},
+  abstract = {Existing proposals that merge IoT with blockchain technologies have been efficient but often limited to a single application scenario. They require specific hardware setups, thus in case of switching to a new application scenario, they may become ineffective and require a new hardware setup. In this paper, we present a new blockchain-based architecture for IoT environments that addresses one of the fundamental challenges in the area which is the capability of supporting multiple application scenarios. The proposed architecture enables transitioning between various application scenarios via smart contracts and configuration files stored on blockchain. The architecture, additionally, addresses scalability concerns of the blockchain-based IoT systems through a cluster-based approach which provides a more flexible and secure solution.},
+}
+
+@inproceedings{Paschou-2023-Cricket,
+  title = {{CRICKET: A Practical Physical Layer Key Agreement Protocol for IoT Networks}},
+  author = {Paschou, Chrys and Raimondo, Francesco and Gugala, Michael and Mcewan, Dave and Pope, James and Oikonomou, George},
+  booktitle = {Proc. IEEE ICC},
+  year = {2023},
+  pages = {4521--4527},
+  oa-url = {https://hdl.handle.net/1983/af973911-7f06-4e3b-bcad-90d556321d3d},
+  doi = {10.1109/ICC45041.2023.10278817},
+  gsid = {10474241819155408100},
+  abstract = {Physical Layer Key Generation (PLKG) is an attractive method for solving the key distribution problem in IoT networks. Although PLKG has a much lower complexity when compared to public key cryptography, it is not always practical in resource-constrained networks due to a high reconciliation cost. Channel Reciprocity for KEy Transmission (CRicKET) is an ultra-lightweight key agreement method that exploits channel reciprocity for securely transmitting a key generated at one end of a single-hop network. The key disagreement rate can be arbitrarily chosen without increasing the computational complexity. Analytical results allow design optimisation and derive the entropy requirement for perfect secrecy. The practicality of CRicKET is successfully tested on a series of IoT boards connected to a wireless network.},
+}
+
+@inproceedings{Erol-2023-EWSN,
+  title = {Evaluating Concept Drift Detectors on Real-World Data},
+  author = {Erol, Ufuk and Raimondo, Francesco and Pope, James and Gunner, {Sam D} and Kumar, Vijay and Mavromatis, Ioannis and Carnelli, Pietro and Spyridopoulos, Theodoros and Khan, Aftab and Oikonomou, George},
+  pages = {397--402},
+  year = {2023},
+  gsid = {1441085897791885294},
+  oa-url = {https://orca.cardiff.ac.uk/id/eprint/161398/},
+  abstract = {Cloud-IoT deployments are ubiquitous and employed in various application domains, including smart buildings. Often employed in public spaces, IoT devices are exposed to various security threats. One such attack is {"}anomalous concept drift{"}. It occurs when an attacker tampers with a device causing it to report realistic sensor data that slowly deviates from the correct value. Evaluating concept drift detectors on real-world data is ideal. Though many indoor datasets exist, our real-world dataset provides a natural, long-term collection of indoor environmental sensor readings over six months. The dataset consists of environmental sensor samples collected via eight IoT devices in a real office setting. The dataset is particularly useful for evaluating concept drift detection algorithms as spatial aspects can be used along with the signals. The dataset has been made openly available, and in this paper we use it to inject malicious concept drifts and to evaluate the performance of several drift detection techniques. The injection tool's source code is also publicly available.},
+}
+
+@misc{Kumar-2023-Challenges,
+  title = {Challenges in the Design and Implementation of IoT Testbeds in Smart-Cities: A Systematic Review},
+  author = {Vijay Kumar and Gunner, {Sam D} and Theodoros Spyridopoulos and Antonis Vafeas and James Pope and Poonam Yadav and George Oikonomou and Theo Tryfonas},
+  year = {2023},
+  howpublished = {arXiv},
+  oa-url = {https://arxiv.org/abs/2302.11009},
+  doi = {10.48550/arXiv.2302.11009},
+  gsid = {14737381929246947659},
+  abstract = {Advancements in wireless communication and the increased accessibility to low-cost sensing and data processing IoT technologies have increased the research and development of urban monitoring systems. Most smart city research projects rely on deploying proprietary IoT testbeds for indoor and outdoor data collection. Such testbeds typically rely on a three-tier architecture composed of the Endpoint, the Edge, and the Cloud. Managing the system's operation whilst considering the security and privacy challenges that emerge, such as data privacy controls, network security, and security updates on the devices, is challenging. This work presents a systematic study of the challenges of developing, deploying and managing urban monitoring testbeds, as experienced in a series of urban monitoring research projects, followed by an analysis of the relevant literature. By identifying the challenges in the various projects and organising them under the V-model development lifecycle levels, we provide a reference guide for future projects. Understanding the challenges early on will facilitate current and future smart-cities IoT research projects to reduce implementation time and deliver secure and resilient testbeds.}
 }
 
 @inproceedings{Mavromatis-2023-ccnc,
