@@ -43,7 +43,7 @@ I maintain and contribute to a number of open source projects.
 ---
 
 #### Contki-NG
-Co-founder, steering group member and maintainer of the
+Co-founder of the
 [Contiki-NG](http://www.contiki-ng.org) open source operating system for the
 Internet of Things.
 
