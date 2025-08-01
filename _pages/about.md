@@ -3,7 +3,7 @@ layout: about
 permalink: /
 title: George Oikonomou
 description: >
-  Associate Professor of IoT Networking | Electrical, Electronic and Mechanical Engineering
+  Professor of Electronic Engineering | Electrical, Electronic and Mechanical Engineering
   | <a href="http://www.bris.ac.uk">University of Bristol</a>
 
 profile:
