@@ -10,7 +10,7 @@ profile:
   align: right
   image: photo-t.jpg
   address: >
-    <p>Office 5.09</p>
+    <p>Office 5.15</p>
     <p>Merchant Venturers Building</p>
     <p>Woodland Road</p>
     <p>Clifton</p>
