@@ -8,7 +8,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 name: George Oikonomou
-email: g.oikonomou@bristol.ac.uk
+#email: g.oikonomou@bristol.ac.uk
 description: George Oikonomou's home page.
 footer_text: >
   Built with <a href="http://jekyllrb.com/">Jekyll</a> and the
