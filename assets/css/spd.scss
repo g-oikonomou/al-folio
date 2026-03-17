@@ -1,10 +1,7 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
 @charset "utf-8";
 
-@import 'variables';
-@import 'media-queries';
+@use 'variables';
+@use 'media-queries';
 
 // spd.gr-specific overrides
 
@@ -22,7 +19,7 @@ footer {
     }
 
     // added for hamburger
-    @include media-query($on-palm) {
+    @include media-queries.media-query(variables.$on-palm) {
         label[for="nav-trigger"] {
             //bootstrap override
             margin-bottom: 0px;
@@ -59,8 +56,8 @@ ol.bibliography > li > div > div.spd-bib-row {
 }
 
 .spd-pub-group {
-    border-bottom: 1px solid $light-gray;
-    color: $light-gray;
+    border-bottom: 1px solid variables.$light-gray;
+    color: variables.$light-gray;
     margin: 0px -1em 0px -1em;
     padding-top: 1ex;
     text-align: left;
