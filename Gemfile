@@ -11,4 +11,7 @@ group :jekyll_plugins do
     gem 'jekyll-scholar'
     gem 'jemoji'
     gem 'unicode_utils'
+    gem 'csv'
+    gem 'ostruct'
+    gem 'observer'
 end
