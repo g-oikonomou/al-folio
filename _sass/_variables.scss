@@ -1,4 +1,4 @@
-
+@use "sass:color";
 /******************************************************************************/
 
 // Typography
@@ -62,8 +62,8 @@ $light-gray:        #ccc !default;
 $lighter-gray:      #eee !default;
 
 $grey-color:        #828282;
-$grey-color-light:  lighten($grey-color, 40%);
-$grey-color-dark:   darken($grey-color, 25%);
+$grey-color-light:  color.adjust($grey-color, $lightness: 40%);
+$grey-color-dark:   color.adjust($grey-color, $lightness: -25%);
 
 $darken-1:          rgba(#000,.0625) !default;
 $darken-2:          rgba(#000,.125) !default;
@@ -77,7 +77,7 @@ $background-color:  white;
 
 // Links
 $link-color:        $theme-color;
-$link-hover-color:  darken($theme-color, 40%);
+$link-hover-color:  color.adjust($theme-color, $lightness: 40%);
 
 // Breakpoints
 $breakpoint-md: '(min-width: 52em)';
